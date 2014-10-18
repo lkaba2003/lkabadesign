@@ -1,0 +1,38 @@
+<%- model_class = ContactPage -%>
+<div class="page-header">
+  <h1><%#=t '.title', :default => model_class.model_name.human.titleize %>
+    Thank you <%= @contact_page.first_name %>
+  </h1>
+</div>
+
+<div class="btn-success">
+  <h3>Your message was successfully sent</h3>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:first_name) %>:</strong></dt>
+  <dd><%= @contact_page.first_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:last_name) %>:</strong></dt>
+  <dd><%= @contact_page.last_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email_address) %>:</strong></dt>
+  <dd><%= @contact_page.email_address %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:message) %>:</strong></dt>
+  <dd><%= @contact_page.message %></dd>
+</dl>
+
+<div class="form-actions">
+  
+
+<a class="btn btn-success" href="home">Back to home page</a>
+  <%#= link_to t('.back', :default => t("helpers.links.back")),
+              contact_pages_path, :class => 'btn btn-info'  %>
+  <%#= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_contact_page_path(@contact_page), :class => 'btn btn-success' %>
+  <%#= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              contact_page_path(@contact_page),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
+
+</br></br></br></br></br></br></br>
