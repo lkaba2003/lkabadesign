@@ -1,38 +1,36 @@
 body {
-  background-color: #F4F4CD;
-  color: black;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 18px;
-}
-
-p, ol, ul, td {
+  background-color: #F9F0E5;
+  color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
 
+
+}
 
 pre {
-  background-color: #E5E56B;
+  background-color: #eee;
   padding: 10px;
   font-size: 11px;
+
 }
 
 a {
   color: #000;
   &:visited {
-    color: #828325;
+    color: #96AD1;
   }
   &:hover {
-    color: #fff;
+    color: #BFAD58;
     background-color: none;
+    
   }
-}
-
-#a:visited {
-    color: #00FF00;
 }
 
 div {
@@ -41,14 +39,14 @@ div {
   }
 }
 
-#notice {
+notice {
   color: green;
 }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+  padding: 1px;
+  background-color: none;
+  display: block;
 }
 
 error_explanation {
@@ -60,12 +58,12 @@ error_explanation {
   background-color: #f0f0f0;
   h2 {
     text-align: left;
-    font-weight: bold;
+    font-weight: bold ;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
+    background-color: red;
     color: #fff;
   }
   ul li {
@@ -73,3 +71,11 @@ error_explanation {
     list-style: square;
   }
 }
+
+ul {
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 17px;
+    color: red;
+    line-height: 18px;
+}
+
