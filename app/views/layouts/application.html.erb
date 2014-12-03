@@ -83,6 +83,11 @@
                     Contact
                   <% end %>
               </li> 
+              <li class="<%= 'active' if current_page?(work_samples_path) %>">
+                  <%=link_to "/work_samples" do %>
+                    WorkSamples
+                  <% end %>
+              </li> 
 
 
              <!-- <li><%= link_to "Home", "/home"  %></li>
@@ -181,6 +186,12 @@
                     Contact
                   <% end %>
                 </li> 
+                 <li class="<%= 'active' if current_page?(work_samples_path) %>">
+                  <%=link_to "/work_samples" do %>
+                    WorkSamples
+                  <% end %>
+              </li> 
+
 
 
                <!-- <li><%= link_to "Home", "/home"  %></li>

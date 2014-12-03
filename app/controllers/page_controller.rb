@@ -18,6 +18,10 @@ class PageController < ApplicationController
   def thanks
     # @contact_page = ContactPage.find(params[:id])
   end
+
+  def work_samples
+    
+  end
 end
  
 

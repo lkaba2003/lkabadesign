@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'event' => 'page#event'
 
   get 'thanks' => 'page#thanks'
+  get 'work_samples' => 'page#work_samples'
   
   namespace :admin do
     resources :contact_pages
